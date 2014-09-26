@@ -3,4 +3,14 @@
 # when eval returns.
 
 eval "$@"
-/opt/ApplicationLauncher/ApplicationLauncher.sh
+
+resolution=`fbset | grep mode | awk -F '"' '{print $2}' | awk -F "-" '{print $1}'`
+
+case "$resolution" in
+	"480x272")
+	 	/opt/ApplicationLauncher/ApplicationLauncher-small.sh
+	;;
+	*)
+		/opt/ApplicationLauncher/ApplicationLauncher.sh
+	;;
+esac
