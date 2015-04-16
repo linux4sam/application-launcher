@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+  <title>All Applications</title>
+  <link rel="self" href="applications.xml" />
+  <id>tag:atmel.com,2005:/photos/public</id>
+  <icon>resources/atmel.png</icon>
+  <subtitle></subtitle>
+  <updated>2012-11-01T15:45:05Z</updated>
+  <generator uri="http://www.atmel.com/">Atmel</generator>

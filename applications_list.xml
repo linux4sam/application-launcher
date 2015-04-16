@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+  <title>All Applications</title>
+  <link rel="self" href="applications.xml" />
+  <id>tag:atmel.com,2005:/photos/public</id>
+  <icon>resources/atmel.png</icon>
+  <subtitle></subtitle>
+  <updated>2012-11-01T15:45:05Z</updated>
+  <generator uri="http://www.atmel.com/">Atmel</generator>
+<screen id="Screen 1"><entry>
+    <title>Home Automation</title>
+    <link rel="alternate" type="text/html" href="../../applications/resources/home-automation.png"/>
+    <id>tag:atmel.com,2005:/app/8144940683</id>
+    <published>2012-11-01T15:45:05Z</published>
+    <updated>2012-11-01T15:45:05Z</updated>
+    <author>Unknown</author>
+    <path exec="/opt/ApplicationLauncher/launch.sh" />
+    <arg>/opt/HomeAutomation/HomeAutomation.sh</arg>
+    <description>Test Description</description>
+    <link rel="enclosure" type="image/png" href="../../applications/resources/home-automation.png" />
+</entry>
+<entry>
+    <title>Video Player</title>
+    <link rel="alternate" type="text/html" href="../../applications/resources/atmel-video-player.png" />
+    <id>tag:atmel.com,2005:/app/8144940683</id>
+    <published>2012-11-01T15:45:05Z</published>
+    <updated>2012-11-01T15:45:05Z</updated>
+    <author>Unknown</author>
+    <path exec="/opt/ApplicationLauncher/launch.sh" />
+    <arg>/opt/VideoPlayer/Atmel-Video-Player.sh</arg>
+    <description>Test Description</description>
+    <link rel="enclosure" type="image/png" href="../../applications/resources/atmel-video-player.png" />
+</entry>
+<entry>
+    <title>Smart Refrigerator</title>
+    <link rel="alternate" type="text/html" href="../../applications/resources/smart-refrigerator.png"/>
+    <id>tag:atmel.com,2005:/app/8144940683</id>
+    <published>2012-11-01T15:45:05Z</published>
+    <updated>2012-11-01T15:45:05Z</updated>
+    <author>Unknown</author>
+    <path exec="/opt/ApplicationLauncher/launch.sh" />
+    <arg>/opt/SmartRefrigerator/SmartRefrigerator.sh</arg>
+    <description>Test Description</description>
+    <link rel="enclosure" type="image/png" href="../../applications/resources/smart-refrigerator.png" />
+</entry>
+<entry>
+    <title>Minehunter</title>
+    <link rel="alternate" type="text/html" href="../../applications/resources/minehunter-game.png" />
+    <id>tag:atmel.com,2005:/app/8144940683</id>
+    <published>2012-11-01T15:45:05Z</published>
+    <updated>2012-11-01T15:45:05Z</updated>
+    <author>Unknown</author>
+    <path exec="/opt/ApplicationLauncher/launch.sh" />
+    <arg>/opt/minehunt/resources/minehunt.sh</arg>
+    <description>Test Description</description>
+    <link rel="enclosure" type="image/png" href="../../applications/resources/minehunter-game.png" />
+</entry>
+<entry>
+    <title>PTP</title>
+    <link rel="alternate" type="text/html" href="../../applications/resources/ptp.png" />
+    <id>tag:atmel.com,2005:/app/8144940683</id>
+    <published>2012-11-01T15:45:05Z</published>
+    <updated>2012-11-01T15:45:05Z</updated>
+    <author>Unknown</author>
+    <path exec="/opt/ApplicationLauncher/launch.sh" />
+    <arg>/opt/ptp/ptp.sh</arg>
+    <description>Test Description</description>
+    <link rel="enclosure" type="image/png" href="../../applications/resources/ptp.png" />
+</entry>
+<entry>
+    <title>Web Browser</title>
+    <link rel="alternate" type="text/html" href="../../applications/resources/web-browser.png"/>
+    <id>tag:atmel.com,2005:/app/8144940683</id>
+    <published>2012-11-01T15:45:05Z</published>
+    <updated>2012-11-01T15:45:05Z</updated>
+    <author>Unknown</author>
+    <path exec="/opt/ApplicationLauncher/launch.sh" />
+    <arg>/opt/browser/resources/browser.sh</arg>
+    <description>Test Description</description>
+    <link rel="enclosure" type="image/png" href="../../applications/resources/web-browser.png" />
+</entry>
+</screen><screen id="Screen 2"><entry>
+    <title>About Timesys</title>
+    <link rel="alternate" type="text/html" href="../../applications/resources/about-timesys.png" />
+    <id>tag:atmel.com,2005:/app/8144940683</id>
+    <published>2012-11-01T15:45:05Z</published>
+    <updated>2012-11-01T15:45:05Z</updated>
+    <author>Unknown</author>
+    <path exec="/opt/ApplicationLauncher/launch.sh" />
+    <arg>/opt/browser/resources/timesys.sh</arg>
+    <description>Test Description</description>
+    <link rel="enclosure" type="image/png" href="../../applications/resources/about-timesys.png" />
+</entry>
+
+<entry>
+    <title>About Atmel</title>
+    <link rel="alternate" type="text/html" href="../../applications/resources/about-atmel.png" />
+    <id>tag:atmel.com,2005:/app/8144940683</id>
+    <published>2012-11-01T15:45:05Z</published>
+    <updated>2012-11-01T15:45:05Z</updated>
+    <author>Unknown</author>
+    <path exec="/opt/ApplicationLauncher/launch.sh" />
+    <arg>/opt/browser/resources/atmel.sh</arg>
+    <description>Test Description</description>
+    <link rel="enclosure" type="image/png" href="../../applications/resources/about-atmel.png" />
+</entry>
+
+<entry>
+    <title>Same Game</title>
+    <link rel="alternate" type="text/html" href="../../applications/resources/same-game.png" />
+    <id>tag:atmel.com,2005:/app/8144940683</id>
+    <published>2012-11-01T15:45:05Z</published>
+    <updated>2012-11-01T15:45:05Z</updated>
+    <author>Unknown</author>
+    <path exec="/opt/ApplicationLauncher/launch.sh" />
+    <arg>/opt/samegame/resources/samegame.sh</arg>
+    <description>Test Description</description>
+    <link rel="enclosure" type="image/png" href="../../applications/resources/same-game.png" />
+</entry>
+</screen></feed>
