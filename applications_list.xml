@@ -9,7 +9,8 @@
   <subtitle></subtitle>
   <updated>2012-11-01T15:45:05Z</updated>
   <generator uri="http://www.atmel.com/">Atmel</generator>
-<screen id="Screen 1"><entry>
+<screen id="Screen 1">
+<entry>
     <title>Home Automation</title>
     <link rel="alternate" type="text/html" href="../../applications/resources/home-automation.png"/>
     <id>tag:atmel.com,2005:/app/8144940683</id>
@@ -46,6 +47,18 @@
     <link rel="enclosure" type="image/png" href="../../applications/resources/minehunter-game.png" />
 </entry>
 <entry>
+    <title>Same Game</title>
+    <link rel="alternate" type="text/html" href="../../applications/resources/same-game.png" />
+    <id>tag:atmel.com,2005:/app/8144940683</id>
+    <published>2012-11-01T15:45:05Z</published>
+    <updated>2012-11-01T15:45:05Z</updated>
+    <author>Unknown</author>
+    <path exec="/opt/ApplicationLauncher/launch.sh" />
+    <arg>/opt/samegame/resources/samegame.sh</arg>
+    <description>Test Description</description>
+    <link rel="enclosure" type="image/png" href="../../applications/resources/same-game.png" />
+</entry>
+<entry>
     <title>PTP</title>
     <link rel="alternate" type="text/html" href="../../applications/resources/ptp.png" />
     <id>tag:atmel.com,2005:/app/8144940683</id>
@@ -69,19 +82,7 @@
     <description>Test Description</description>
     <link rel="enclosure" type="image/png" href="../../applications/resources/web-browser.png" />
 </entry>
-</screen><screen id="Screen 2"><entry>
-    <title>About Timesys</title>
-    <link rel="alternate" type="text/html" href="../../applications/resources/about-timesys.png" />
-    <id>tag:atmel.com,2005:/app/8144940683</id>
-    <published>2012-11-01T15:45:05Z</published>
-    <updated>2012-11-01T15:45:05Z</updated>
-    <author>Unknown</author>
-    <path exec="/opt/ApplicationLauncher/launch.sh" />
-    <arg>/opt/browser/resources/timesys.sh</arg>
-    <description>Test Description</description>
-    <link rel="enclosure" type="image/png" href="../../applications/resources/about-timesys.png" />
-</entry>
-
+</screen><screen id="Screen 2">
 <entry>
     <title>About Atmel</title>
     <link rel="alternate" type="text/html" href="../../applications/resources/about-atmel.png" />
@@ -94,17 +95,16 @@
     <description>Test Description</description>
     <link rel="enclosure" type="image/png" href="../../applications/resources/about-atmel.png" />
 </entry>
-
 <entry>
-    <title>Same Game</title>
-    <link rel="alternate" type="text/html" href="../../applications/resources/same-game.png" />
+    <title>About Timesys</title>
+    <link rel="alternate" type="text/html" href="../../applications/resources/about-timesys.png" />
     <id>tag:atmel.com,2005:/app/8144940683</id>
     <published>2012-11-01T15:45:05Z</published>
     <updated>2012-11-01T15:45:05Z</updated>
     <author>Unknown</author>
     <path exec="/opt/ApplicationLauncher/launch.sh" />
-    <arg>/opt/samegame/resources/samegame.sh</arg>
+    <arg>/opt/browser/resources/timesys.sh</arg>
     <description>Test Description</description>
-    <link rel="enclosure" type="image/png" href="../../applications/resources/same-game.png" />
+    <link rel="enclosure" type="image/png" href="../../applications/resources/about-timesys.png" />
 </entry>
 </screen></feed>
