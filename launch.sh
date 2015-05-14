@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # launch.sh - kills ApplicationLauncher and execs the given args, restarts launcher
 # when eval returns.
 
