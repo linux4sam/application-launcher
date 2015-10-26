@@ -8,6 +8,7 @@
  * See the COPYING license file for more details.
  */
 
+#include "qdatastream.h"
 #include "xmlfileprocessor.h"
 #include <QFile>
 #include <QDirIterator>
