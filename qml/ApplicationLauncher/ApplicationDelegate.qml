@@ -20,13 +20,16 @@ Item {
 
     function applicationClicked() {
         console.log("clicked  " + applicationName)
-        process.start()
-        exitTimer.start()
+
+        if (!exitTimer.running) {
+            process.start()
+            exitTimer.start()
+        }
     }
 
     Timer {
           id: exitTimer
-          interval: 1000; running: false; repeat: false
+          interval: 1000; running: false; repeat: true
           onTriggered: Qt.quit();
     }
 
