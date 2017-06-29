@@ -18,6 +18,7 @@
 #endif // (QT_VERSION >= 0x050000)
 #include <QtDeclarative/qdeclarative.h>
 #include <QDeclarativeContext>
+#include <QTimer>
 #include "qmlapplicationviewer.h"
 #include "process.h"
 #include "xmlfileprocessor.h"
@@ -69,8 +70,14 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QDeclarativeContext *ctxt = viewer.rootContext();
     ctxt->setContextProperty("wqvga", wqvga);
     viewer.setMainQmlFile(QLatin1String("qml/ApplicationLauncher/main.qml"));
-    viewer.showFullScreen();
-//    viewer.show();
+
+    // This is a *magic* hack to get rid of a blank screen at startup. Probably
+    // a better way to do this.
+    QTimer::singleShot(100, [&viewer] {
+		    viewer.showFullScreen();
+		    //viewer.show();
+	    });
+
     qApp->setOverrideCursor( QCursor( Qt::BlankCursor ) );
 
     return app->exec();
