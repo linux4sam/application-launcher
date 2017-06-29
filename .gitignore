@@ -1,0 +1,14 @@
+*.o
+Makefile
+.qmake.stash
+ApplicationLauncher
+*.pro.user
+moc_predefs.h
+moc_process.cpp
+moc_qmlapplicationviewer.cpp
+moc_xmlfileprocessor.cpp
+process.moc
+.stamp_*
+.applied_patches_list
+.br_filelist_after
+.br_filelist_before
