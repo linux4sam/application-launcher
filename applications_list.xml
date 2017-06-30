@@ -5,10 +5,10 @@
   <title>All Applications</title>
   <link rel="self" href="applications.xml" />
   <id>tag:atmel.com,2005:/photos/public</id>
-  <icon>resources/atmel.png</icon>
+  <icon>resources/microchip.png</icon>
   <subtitle></subtitle>
   <updated>2012-11-01T15:45:05Z</updated>
-  <generator uri="http://www.atmel.com/">Atmel</generator>
+  <generator uri="http://www.microchip.com/">Microchip</generator>
 <screen id="Screen 1">
 <entry>
     <title>Home Automation</title>
@@ -72,7 +72,7 @@
 </entry>
 </screen><screen id="Screen 2">
 <entry>
-    <title>About Atmel</title>
+    <title>About Microchip</title>
     <link rel="alternate" type="text/html" href="../../applications/resources/about-microchip.png" />
     <id>tag:atmel.com,2005:/app/8144940683</id>
     <published>2012-11-01T15:45:05Z</published>
