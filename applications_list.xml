@@ -83,16 +83,4 @@
     <description>Test Description</description>
     <link rel="enclosure" type="image/png" href="../../applications/resources/about-microchip.png" />
 </entry>
-<entry>
-    <title>About Timesys</title>
-    <link rel="alternate" type="text/html" href="../../applications/resources/about-timesys.png" />
-    <id>tag:atmel.com,2005:/app/8144940683</id>
-    <published>2012-11-01T15:45:05Z</published>
-    <updated>2012-11-01T15:45:05Z</updated>
-    <author>Unknown</author>
-    <path exec="/opt/ApplicationLauncher/launch.sh" />
-    <arg>/opt/browser/resources/timesys.sh</arg>
-    <description>Test Description</description>
-    <link rel="enclosure" type="image/png" href="../../applications/resources/about-timesys.png" />
-</entry>
 </screen></feed>
