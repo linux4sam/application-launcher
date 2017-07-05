@@ -74,10 +74,11 @@ void Process::setArguments(const QStringList &arguments)
 
 void Process::start()
 {
-    bool result = d->startDetached(d->program, d->arguments);
+    d->start(d->program, d->arguments);
 
-    // next lines just for control if there any error
-    qDebug() << "\t### STARTED: " << result;
+    bool result = d->waitForStarted(20000);
+
+    qDebug() << "STARTED: " << result;
     if (!result) {
         qDebug() << "QProcess::ProcessError: " << d->error();
     }

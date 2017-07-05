@@ -20,17 +20,7 @@ Item {
 
     function applicationClicked() {
         console.log("clicked  " + applicationName)
-
-        if (!exitTimer.running) {
-            process.start()
-            exitTimer.start()
-        }
-    }
-
-    Timer {
-          id: exitTimer
-          interval: 1000; running: false; repeat: true
-          onTriggered: Qt.quit();
+        process.start()
     }
 
     Process {
@@ -46,13 +36,15 @@ Item {
 //            console.log("STD OUT: " + process.readAllStandardOutput())
 //        }
 
-//        onStarted: {
-//            console.log("Started")
-//        }
+        onStarted: {
+            console.log("Started")
+        }
 
-//        onFinished: {
-//            console.log("Finished")
-//        }
+        onFinished: {
+            loadingTimer.stop()
+            load.active = 'false'
+            console.log("Finished")
+        }
     }
 
     Item {
@@ -128,12 +120,12 @@ Item {
 
         Timer {
             id: loadingTimer
-            interval: 7000;
+            interval: 20000;
             repeat: false
             onTriggered: {
                 load.active = 'false'
-                console.log("STD_ERR: " + process.readAllStandardError()
-                            + "STD OUT: " + process.readAllStandardOutput())
+                //console.log("STD_ERR: " + process.readAllStandardError()
+                //            + "STD OUT: " + process.readAllStandardOutput())
             }
         }
     }
