@@ -73,9 +73,9 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     // This is a *magic* hack to get rid of a blank screen at startup. Probably
     // a better way to do this.
-    QTimer::singleShot(100, [&viewer] {
-		    viewer.showFullScreen();
-		    //viewer.show();
+    QTimer::singleShot(2000, [&viewer] {
+            viewer.showFullScreen();
+            //viewer.show();
 	    });
 
     qApp->setOverrideCursor( QCursor( Qt::BlankCursor ) );
