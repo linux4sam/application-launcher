@@ -31,6 +31,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QString currentName;
     QString currentVal;
     int idxOf=0;
+    bool multifile = false;
 
     wqvga = false;
 
@@ -54,14 +55,20 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
             {
                 wqvga = true;
             }
+            else if(currentName.contains(QString("multifile")))
+            {
+                multifile = true;
+            }
         }
     }
 
     QScopedPointer<QApplication> app(createApplication(argc, argv));
 
-    // When we final release, we can write this file manually
-    //XMLFileProcessor fProcessor;
-    //fProcessor.processFiles();
+    if (multifile)
+    {
+        XMLFileProcessor fProcessor;
+        fProcessor.processFiles();
+    }
 
     qmlRegisterType<Process>("QtAppProcess", 0, 1, "Process");
 
