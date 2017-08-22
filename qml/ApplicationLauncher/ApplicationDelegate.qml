@@ -120,7 +120,7 @@ Item {
 
         Timer {
             id: loadingTimer
-            interval: 5000;
+            interval: 8000;
             repeat: false
             onTriggered: {
                 load.active = 'false'
@@ -134,7 +134,7 @@ Item {
         anchors.fill: applicationItem;
         onClicked: {
             app.state = "Pressed"
-            //load.active = 'true'
+            load.active = 'true'
             stateTimer.start()
             loadingTimer.start()
             applicationClicked()
