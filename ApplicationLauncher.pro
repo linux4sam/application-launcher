@@ -6,7 +6,8 @@ apps.source = applications
 startfile1.source = ApplicationLauncher.sh
 startfile2.source = ApplicationLauncher-small.sh
 launchfile1.source = launch.sh
-DEPLOYMENTFOLDERS = folder_01 resources apps startfile1 startfile2 launchfile1
+launchfile2.source = launch-fork.sh
+DEPLOYMENTFOLDERS = folder_01 resources apps startfile1 startfile2 launchfile1 launchfile2
 
 # Additional import path used to resolve QML modules in Creator's code model
 QML_IMPORT_PATH =
