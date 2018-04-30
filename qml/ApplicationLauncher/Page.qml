@@ -20,7 +20,6 @@ Component {
         height: ListView.view.height
 
         Image {
-            anchors.fill: parent
             smooth: false
             source: wqvga ? "../../resources/background-wqvga.jpg" : "../../resources/background.jpg"
             clip: true
@@ -68,8 +67,8 @@ Component {
             height: 40
             anchors.right: parent.right
             anchors.rightMargin: wqvga ? 10 : 30
-            anchors.verticalCenter: wqvga ? parent : parent.verticalCenter
-            anchors.bottom: wqvga ? parent.bottom : parent
+            anchors.verticalCenter: wqvga ? undefined : parent.verticalCenter
+            anchors.bottom: wqvga ? parent.bottom : undefined
             anchors.bottomMargin: wqvga ? 20 : 0
             source: "../../resources/arrow-right.png"
             visible: ((index+1) < flickable.count) ? true : false
@@ -90,8 +89,8 @@ Component {
             height: 40
             anchors.left: parent.left
             anchors.leftMargin: wqvga ? 10 : 30
-            anchors.verticalCenter: wqvga ? parent : parent.verticalCenter
-            anchors.bottom: wqvga ? parent.bottom : parent
+            anchors.verticalCenter: wqvga ? undefined : parent.verticalCenter
+            anchors.bottom: wqvga ? parent.bottom : undefined
             anchors.bottomMargin: wqvga ? 20 : 0
 
             source: "../../resources/arrow-left.png"
