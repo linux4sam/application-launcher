@@ -11,7 +11,7 @@
 #include "qdatastream.h"
 #include "xmlfileprocessor.h"
 #include <QFile>
-#include <QDirIterator>
+#include <QDir>
 #include <QDebug>
 
 XMLFileProcessor::XMLFileProcessor(QObject *parent) :
@@ -56,14 +56,13 @@ void XMLFileProcessor::processFiles()
     out.writeRawData( c, 1);
     out.writeRawData("\">", 2);
 
-    QDirIterator iterator("./applications/xml/", QDirIterator::NoIteratorFlags);
+    QDir dir("./applications/xml/");
+    QFileInfoList list = dir.entryInfoList(QDir::NoFilter, QDir::Name);
 
-    qDebug() << "iterator: " << iterator.path();
-
-    while(iterator.hasNext())
+    for (int i = 0; i < list.size(); ++i)
     {
-        iterator.next();
-        if (iterator.fileInfo().absoluteFilePath().endsWith(".xml", Qt::CaseInsensitive))
+        QFileInfo fileInfo = list.at(i);
+        if (fileInfo.absoluteFilePath().endsWith(".xml", Qt::CaseInsensitive))
         {
             internalCounter++;
             if(internalCounter > 6){
@@ -77,7 +76,7 @@ void XMLFileProcessor::processFiles()
                 internalCounter = 1;
             }
 
-            QFile inFile(iterator.fileInfo().absoluteFilePath());
+            QFile inFile(fileInfo.absoluteFilePath());
             if (!inFile.open(QIODevice::ReadOnly))
                  continue;
 
