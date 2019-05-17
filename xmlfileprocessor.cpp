@@ -51,7 +51,7 @@ void XMLFileProcessor::processFiles()
     delete [] initData;
 
     out.writeRawData( "<screen id=\"Screen ", 19);
-    char c[1];
+    char c[2];
     sprintf(c, "%d", screenNumber);
     out.writeRawData( c, 1);
     out.writeRawData("\">", 2);
@@ -69,7 +69,7 @@ void XMLFileProcessor::processFiles()
                 screenNumber++;
                 out.writeRawData( "</screen>", 9);
                 out.writeRawData( "<screen id=\"Screen ", 19);
-                char d[1];
+                char d[2];
                 sprintf(d, "%d", screenNumber);
                 out.writeRawData( d, 1);
                 out.writeRawData("\">", 2);
