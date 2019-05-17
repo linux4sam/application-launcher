@@ -1,4 +1,4 @@
-QT += declarative
+QT += qml quick
 
 SOURCES += $$PWD/qmlapplicationviewer.cpp
 HEADERS += $$PWD/qmlapplicationviewer.h

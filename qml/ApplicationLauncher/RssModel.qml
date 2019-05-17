@@ -7,7 +7,8 @@
  * DISCLAIMER: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
  * See the COPYING license file for more details.
  */
-import QtQuick 1.1
+import QtQuick 2.3
+import QtQuick.XmlListModel 2.12
 
 XmlListModel {
 

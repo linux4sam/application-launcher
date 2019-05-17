@@ -10,7 +10,8 @@
  * Software Author: Timesys Corporation (www.timesys.com)
  */
 
-import QtQuick 1.0
+import QtQuick 2.3
+import QtQuick.XmlListModel 2.12
 
 Rectangle {
     id: canvas
@@ -20,7 +21,6 @@ Rectangle {
     RssModel { id: rssModel }
     ListView {
         id: flickable
-        // pressDelay: 200
         keyNavigationWraps: false
         boundsBehavior: Flickable.DragAndOvershootBounds
         flickableDirection: Flickable.HorizontalFlick
@@ -29,7 +29,6 @@ Rectangle {
         anchors.fill: parent
         focus: false
         highlightRangeMode: ListView.StrictlyEnforceRange
-        highlightMoveSpeed: 4000
         orientation: ListView.Horizontal
         snapMode: ListView.SnapOneItem
         model: rssModel

@@ -10,7 +10,7 @@
  * Software Author: Timesys Corporation (www.timesys.com)
  */
 
-import QtQuick 1.1
+import QtQuick 2.3
 import QtAppProcess 0.1
 
 Item {

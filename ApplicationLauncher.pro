@@ -49,3 +49,5 @@ OTHER_FILES +=
 HEADERS += \
     xmlfileprocessor.h \
     process.h
+
+QT += widgets qml quick xmlpatterns

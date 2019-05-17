@@ -16,12 +16,11 @@
 #else
 #include <QtGui/QApplication>
 #endif // (QT_VERSION >= 0x050000)
-#include <QtDeclarative/qdeclarative.h>
-#include <QDeclarativeContext>
 #include <QTimer>
 #include "qmlapplicationviewer.h"
 #include "process.h"
 #include "xmlfileprocessor.h"
+#include <QQmlContext>
 
 bool wqvga;
 
@@ -74,7 +73,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     QmlApplicationViewer viewer;
     viewer.setOrientation(QmlApplicationViewer::ScreenOrientationAuto);
-    QDeclarativeContext *ctxt = viewer.rootContext();
+    QQmlContext *ctxt = viewer.rootContext();
     ctxt->setContextProperty("wqvga", wqvga);
     viewer.setMainQmlFile(QLatin1String("qml/ApplicationLauncher/main.qml"));
 

@@ -10,7 +10,8 @@
  * Software Author: Timesys Corporation (www.timesys.com)
  */
 
-import QtQuick 1.0
+import QtQuick 2.3
+import QtQuick.XmlListModel 2.12
 
 Component {
     Item {
