@@ -30,7 +30,7 @@ Component {
             id: innerModel
 
             source: "../../applications_list.xml"
-            query: "/feed/screen[" + (index + 1) + "]/entry"
+            query: "/feed/screen[@id='Screen " + (flickable.currentIndex + 1) + "']/entry"
             namespaceDeclarations: "declare default element namespace 'http://www.w3.org/2005/Atom';"
 
             XmlRole { name: "applicationName"; query: "title/string()" }
@@ -72,7 +72,7 @@ Component {
             anchors.bottom: wqvga ? parent.bottom : undefined
             anchors.bottomMargin: wqvga ? 20 : 0
             source: "../../resources/arrow-right.png"
-            visible: ((index+1) < flickable.count) ? true : false
+            visible: ((flickable.currentIndex+1) < flickable.count) ? true : false
 
             MouseArea {
                 id: mouse_area_right_arrow
@@ -95,7 +95,7 @@ Component {
             anchors.bottomMargin: wqvga ? 20 : 0
 
             source: "../../resources/arrow-left.png"
-            visible: (index+1>1) ? true : false
+            visible: (flickable.currentIndex+1>1) ? true : false
 
             MouseArea {
                 id: mouse_area_left_arrow
