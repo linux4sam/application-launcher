@@ -22,7 +22,7 @@
 #include "xmlfileprocessor.h"
 #include <QQmlContext>
 
-bool wqvga;
+static bool wqvga;
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
