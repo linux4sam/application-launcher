@@ -24,6 +24,7 @@ Rectangle {
         keyNavigationWraps: false
         boundsBehavior: Flickable.DragAndOvershootBounds
         flickableDirection: Flickable.HorizontalFlick
+        highlightMoveVelocity: -1
         interactive: false
         smooth: false
         anchors.fill: parent
