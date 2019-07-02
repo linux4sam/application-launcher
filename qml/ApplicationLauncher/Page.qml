@@ -21,6 +21,7 @@ Component {
         height: ListView.view.height
 
         Image {
+            anchors.fill: wqvga ? undefined : parent
             smooth: false
             source: wqvga ? "../../resources/background-wqvga.jpg" : "../../resources/background.jpg"
             clip: true
